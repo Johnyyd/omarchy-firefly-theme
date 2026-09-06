@@ -32,11 +32,15 @@ if [[ -e $backup_dir/theme || -L $backup_dir/theme ]]; then
   mv -- "$backup_dir/theme" "$theme_dir"
 fi
 
-rm -f -- "$template_path"
-if [[ -e $backup_dir/kitty.conf.tpl || -L $backup_dir/kitty.conf.tpl ]]; then
-  mkdir -p "$(dirname -- "$template_path")"
-  mv -- "$backup_dir/kitty.conf.tpl" "$template_path"
-fi
+template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl)
+for tpl in "${template_files[@]}"; do
+  tpl_path="$HOME/.config/omarchy/themed/$tpl"
+  rm -f -- "$tpl_path"
+  if [[ -e $backup_dir/$tpl || -L $backup_dir/$tpl ]]; then
+    mkdir -p "$(dirname -- "$tpl_path")"
+    mv -- "$backup_dir/$tpl" "$tpl_path"
+  fi
+done
 
 previous_theme=$(<"$backup_dir/previous-theme")
 if [[ -n $previous_theme ]]; then

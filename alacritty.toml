@@ -1,13 +1,6 @@
-# alacritty.toml
-# By Johnyyd (https://github.com/Johnyyd)
-#
-
-
 [window]
-opacity = 0.20
+opacity = 0.80
 
-
-[colors]
 [colors.primary]
 background = "#000000"
 foreground = "#BAC8B1"
@@ -22,11 +15,11 @@ cursor = "#BAC8B1"
 
 [colors.search.matches]
 foreground = "#000000"
-background = "#8FA4AB"
+background = "#FFB347"
 
 [colors.search.focused_match]
 foreground = "#000000"
-background = "#8FA4AB"
+background = "#D94F4F"
 
 [colors.footer_bar]
 foreground = "#000000"
@@ -37,21 +30,21 @@ text = "#000000"
 background = "#8FA4AB"
 
 [colors.normal]
-black   = "#000000"
-red     = "#D94F4F"
-green   = "#6F9C97"
-yellow  = "#FFB347"
-blue    = "#4D5F64"
+black = "#000000"
+red = "#D94F4F"
+green = "#6F9C97"
+yellow = "#FFB347"
+blue = "#4D5F64"
 magenta = "#FF7A3D"
-cyan    = "#6F9C97"
-white   = "#BAC8B1"
+cyan = "#6F9C97"
+white = "#BAC8B1"
 
 [colors.bright]
-black   = "#000000"
-red     = "#D94F4F"
-green   = "#6F9C97"
-yellow  = "#FFB347"
-blue    = "#4D5F64"
+black = "#A08F82"
+red = "#D94F4F"
+green = "#6F9C97"
+yellow = "#FFB347"
+blue = "#4D5F64"
 magenta = "#FF7A3D"
-cyan    = "#6F9C97"
-white   = "#BAC8B1"
+cyan = "#6F9C97"
+white = "#BAC8B1"

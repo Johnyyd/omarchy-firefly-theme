@@ -1,80 +1,52 @@
 return {
-	{
-		"bjarneo/aether.nvim",
-		branch = "v2",
-		name = "aether",
-		priority = 1000,
-		opts = {
-			transparent = false,
-			colors = {
-				-- Background colors
-				bg = "#000000",
-				bg_dark = "#000000",
-				bg_highlight = "#4D5F64",
+  {
+    "bjarneo/aether.nvim",
+    branch = "v3",
+    name = "aether",
+    priority = 1000,
+    opts = {
+      colors = {
+        bg = "#000000",
+        dark_bg = "#000000",
+        darker_bg = "#000000",
+        lighter_bg = "#4D5F64",
 
-				-- Foreground colors
-				-- fg: Object properties, builtin types, builtin variables, member access, default text
-				fg = "#BAC8B1",
-				-- fg_dark: Inactive elements, statusline, secondary text
-				fg_dark = "#6F9C97",
-				-- comment: Line highlight, gutter elements, disabled states
-				comment = "#6F9C97",
+        fg = "#BAC8B1",
+        dark_fg = "#739099",
+        light_fg = "#BAC8B1",
+        bright_fg = "#BAC8B1",
+        muted = "#A08F82",
 
-				-- Accent colors
-				-- red: Errors, diagnostics, tags, deletions, breakpoints
-				red = "#D94F4F",
-				-- orange: Constants, numbers, current line number, git modifications
-				orange = "#FF7A3D",
-				-- yellow: Types, classes, constructors, warnings, numbers, booleans
-				yellow = "#FFB347",
-				-- green: Comments, strings, success states, git additions
-				green = "#6F9C97",
-				-- cyan: Parameters, regex, preprocessor, hints, properties
-				cyan = "#E85D2A",
-				-- blue: Functions, keywords, directories, links, info diagnostics
-				blue = "#739099",
-				-- purple: Storage keywords, special keywords, identifiers, namespaces
-				purple = "#FF7A3D",
-				-- magenta: Function declarations, exception handling, tags
-				magenta = "#FFB347",
-			},
-			on_highlights = function(hl, c)
-				hl["@constant.builtin"] = { fg = c.orange }
-				hl["@keyword.function"] = { fg = c.magenta, bold = true }
-				hl["@module"] = { fg = c.purple }
-				hl["@property"] = { fg = c.fg_dark }
-				hl["@type.builtin"] = { fg = c.blue }
-				hl["@variable.member"] = { fg = c.fg_dark }
+        red = "#D94F4F",
+        yellow = "#FFB347",
+        orange = "#FF7A3D",
+        green = "#6F9C97",
+        cyan = "#6F9C97",
+        blue = "#4D5F64",
+        magenta = "#FF7A3D",
+        brown = "#E85D2A",
 
-				-- Force window separators away from the default near-black fallback.
-				hl.WinSeparator = { fg = c.comment }
-				hl.VertSplit = { fg = c.comment }
-				hl.NeoTreeWinSeparator = { fg = c.comment }
-				hl.NeoTreeVertSplit = { fg = c.comment }
-				hl.NvimTreeVertSplit = { fg = c.comment }
+        bright_red = "#D94F4F",
+        bright_yellow = "#FFB347",
+        bright_green = "#6F9C97",
+        bright_cyan = "#6F9C97",
+        bright_blue = "#4D5F64",
+        bright_magenta = "#FF7A3D",
 
-				hl["@lsp.type.class"] = { fg = c.yellow }
-				hl["@lsp.type.interface"] = { fg = c.yellow }
-				hl["@lsp.type.namespace"] = { fg = c.purple }
-				hl["@lsp.type.parameter"] = { fg = c.cyan, italic = true }
-				hl["@lsp.type.property"] = { fg = c.fg_dark }
-				hl["@lsp.type.struct"] = { fg = c.yellow }
-				hl["@lsp.type.type"] = { fg = c.yellow }
-				hl["@lsp.type.typeParameter"] = { fg = c.blue }
-			end,
-		},
-		config = function(_, opts)
-			require("aether").setup(opts)
-			vim.cmd.colorscheme("aether")
-
-			-- Enable hot reload
-			require("aether.hotreload").setup()
-		end,
-	},
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "aether",
-		},
-	},
-}                           
+        accent = "#8FA4AB",
+        cursor = "#BAC8B1",
+        foreground = "#BAC8B1",
+        background = "#000000",
+        selection = "#8FA4AB",
+        selection_foreground = "#000000",
+        selection_background = "#8FA4AB",
+      },
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "aether",
+    },
+  },
+}

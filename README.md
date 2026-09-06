@@ -8,23 +8,27 @@ Firefly is a dark Omarchy theme inspired by the character from Honkai Star Rail,
 
 ## Install
 
-For a complete install with automatic backups and an uninstall path, run:
+### Option 1: Complete local install (Recommended)
+For a complete install with automatic backups, VS Code theme extension synchronization, transparent background window rules, and a clean uninstall path, run:
 
 ```bash
 ./install.sh
 ```
 
-The installer copies every project configuration file into the Firefly theme,
-then applies it through Omarchy. It backs up the complete previous Firefly
-theme, generated runtime theme, wallpaper, Kitty template, and VS Code settings.
-It also installs the generated Firefly VS Code color extension through Omarchy.
-Restore everything with:
+- Installs Firefly as an Omarchy theme matching official template specifications.
+- Configures Kitty with clean transparent background (`background_opacity 0.80`).
+- Configures Hyprland with border gradients and transparency rules for VS Code, Cursor, and VSCodium.
+- Automatically generates and synchronizes the rich Firefly color theme extension for VS Code / Cursor.
+- Creates automatic backups of previous theme, wallpaper, and editor settings.
+
+Restore previous configuration at any time with:
 
 ```bash
 ./uninstall.sh
 ```
 
-For the standard Omarchy theme installer:
+### Option 2: Standard Omarchy installer
+To install directly from the remote git repository:
 
 ```bash
 omarchy-theme-install https://github.com/Johnyyd/omarchy-firefly-theme
@@ -32,11 +36,18 @@ omarchy-theme-install https://github.com/Johnyyd/omarchy-firefly-theme
 
 ## What's Included
 
-- Native Omarchy Quattro theming through `colors.toml`, `shell.toml`, and `hyprland.lua`, including shared cream/off-white-tinted/ border gradients, shell surfaces, controls, spacing, and typography.
-- Omarchy 3.8 compatibility styling for Hyprland, Hyprlock, Waybar, Mako, Walker, and SwayOSD.
-- Current terminal and editor mappings for Alacritty, Foot, Ghostty, Kitty, Helix, Pi, VS Code, Zed, Warp, and Neovim.
-- A standalone [Vencord theme](vencord.theme.css) with its own layered Discord treatment instead of a thin palette pass-through.
-- A custom [Neovim theme override](neovim.lua) for `bjarneo/aether.nvim` with Firefly-specific highlight tuning.
+- **Hyprland Window Rules**: Window transparency rules (`0.80` active, `0.75` inactive) for VS Code, Cursor, VSCodium, Antigravity IDE, GitHub Desktop, Obsidian, Zed, Discord, Slack, Telegram, Spotify, and Nautilus.
+- **Terminals**: Clean transparent background configurations (`0.80` opacity, blur disabled) for Kitty, Alacritty, Ghostty, and Foot.
+- **TUIs & Monitors**: Native transparent terminal backgrounds for `btop` (`main_bg=""`), `helix` (`ui.background={}`), and `neovim`.
+- **VS Code / Cursor / VSCodium**: Full multi-color syntax highlighting (`vscode-theme.json`) covering TextMate scopes and semantic tokens:
+  - **Keywords & Control Flow**: `#FF7A3D` (Firefly Flame Orange)
+  - **Functions & Methods**: `#FFB347` (Golden Yellow)
+  - **Types & Interfaces**: `#739099` (Steel Blue-Grey)
+  - **Strings**: `#6F9C97` (Teal Green)
+  - **Variables & Parameters**: `#E85D2A` (Warm Coral / Amber)
+- **Editors & TUIs**: Native configurations for Neovim (`aether.nvim` v3 with LazyVim), Helix, Pi, Claude CLI, and Zed.
+- **Desktop Integrations**: Styled layouts for Waybar, Mako, Walker, SwayOSD, and Hyprlock.
+- **Vencord Theme**: Standalone [Vencord theme](vencord.theme.css) with custom layered treatment for Discord.
 
 ## Wallpapers
 

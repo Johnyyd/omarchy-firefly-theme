@@ -19,9 +19,8 @@ vscode_settings=(
 )
 
 command -v omarchy >/dev/null || { echo "omarchy is required" >&2; exit 1; }
-[[ -f $repo_dir/kitty.conf.tpl ]] || { echo "kitty.conf.tpl is missing" >&2; exit 1; }
 
-mkdir -p "$backup_dir" "$template_dir" "$(dirname -- "$theme_dir")"
+mkdir -p "$backup_dir" "$(dirname -- "$theme_dir")"
 
 previous_theme=""
 if [[ -f $current_theme_file ]]; then
@@ -47,14 +46,30 @@ done
 if [[ -e $theme_dir || -L $theme_dir ]]; then
   mv -- "$theme_dir" "$backup_dir/theme"
 fi
-if [[ -e $template_path || -L $template_path ]]; then
-  mv -- "$template_path" "$backup_dir/kitty.conf.tpl"
-fi
 
-mkdir -p "$theme_dir"
+template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl)
+
+for tpl in "${template_files[@]}"; do
+  tpl_path="$template_dir/$tpl"
+  if [[ -e $tpl_path || -L $tpl_path ]]; then
+    mv -- "$tpl_path" "$backup_dir/$tpl"
+  fi
+done
+
+mkdir -p "$theme_dir" "$template_dir"
 cp -a "$repo_dir/." "$theme_dir/"
-rm -rf -- "$theme_dir/.git" "$theme_dir/.github"
-cp -- "$repo_dir/kitty.conf.tpl" "$template_path"
+
+for tpl in "${template_files[@]}"; do
+  if [[ -f "$repo_dir/$tpl" ]]; then
+    cp -- "$repo_dir/$tpl" "$template_dir/$tpl"
+  fi
+done
+
+# Ensure .git exists in the theme dir so Omarchy treats it as a repo-installed theme,
+# keeping runtime configurations identical to `omarchy-theme-install`.
+if [[ ! -d "$theme_dir/.git" ]]; then
+  git -C "$theme_dir" init -q 2>/dev/null || true
+fi
 
 find "$repo_dir" -maxdepth 1 -type f -printf '%f\n' | sort > "$backup_dir/installed-files"
 
@@ -62,10 +77,21 @@ printf '%s\n' "$backup_dir" > "$state_dir/latest-backup"
 
 omarchy theme set "$theme_name"
 
-# Git-installed themes cannot stage vscode.json. Add the descriptor after the
-# theme switch, then let Omarchy generate/install the local color extension.
-cp -- "$repo_dir/vscode.json" "$runtime_theme_dir/vscode.json"
+# Apply Firefly Hyprland configuration (with transparent window rules)
+cp -- "$repo_dir/hyprland.lua" "$runtime_theme_dir/hyprland.lua"
+omarchy-restart-hyprctl 2>/dev/null || true
+
+# Sync VS Code theme extension and settings with the new theme colors
+cp -- "$repo_dir/vscode-theme.json" "$runtime_theme_dir/vscode-theme.json"
 omarchy-theme-set-vscode 2>/dev/null || true
+
+# Sync transparent terminal and monitor configs to runtime
+for conf in kitty.conf alacritty.toml ghostty.conf foot.ini btop.theme; do
+  if [[ -f "$repo_dir/$conf" ]]; then
+    cp -- "$repo_dir/$conf" "$runtime_theme_dir/$conf"
+  fi
+done
+omarchy-restart-terminal 2>/dev/null || true
 
 echo "Firefly theme installed and applied."
 echo "Backup: $backup_dir"
