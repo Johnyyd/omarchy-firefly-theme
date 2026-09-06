@@ -16,7 +16,9 @@ For a complete install with automatic backups and an uninstall path, run:
 
 The installer copies every project configuration file into the Firefly theme,
 then applies it through Omarchy. It backs up the complete previous Firefly
-theme, generated runtime theme, wallpaper, and Kitty template. Restore them with:
+theme, generated runtime theme, wallpaper, Kitty template, and VS Code settings.
+It also installs the generated Firefly VS Code color extension through Omarchy.
+Restore everything with:
 
 ```bash
 ./uninstall.sh

@@ -8,6 +8,12 @@ state_dir="$HOME/.local/state/omarchy-firefly-theme"
 latest_file="$state_dir/latest-backup"
 current_theme_file="$HOME/.local/state/omarchy/current/theme.name"
 runtime_theme_dir="$HOME/.local/state/omarchy/current/theme"
+vscode_settings=(
+  "$HOME/.config/Code/User/settings.json"
+  "$HOME/.config/Code - Insiders/User/settings.json"
+  "$HOME/.config/VSCodium/User/settings.json"
+  "$HOME/.config/Cursor/User/settings.json"
+)
 
 command -v omarchy >/dev/null || { echo "omarchy is required" >&2; exit 1; }
 
@@ -42,6 +48,17 @@ else
     cp -a "$backup_dir/runtime-theme" "$runtime_theme_dir"
   fi
   rm -f -- "$current_theme_file"
+fi
+
+if [[ -f $backup_dir/vscode-settings.manifest ]]; then
+  while IFS= read -r settings_path; do
+    [[ -n $settings_path ]] || continue
+    settings_name=$(printf '%s' "$settings_path" | sha256sum | cut -d' ' -f1)
+    if [[ -f $backup_dir/vscode-settings-$settings_name.json ]]; then
+      mkdir -p "$(dirname -- "$settings_path")"
+      cp -- "$backup_dir/vscode-settings-$settings_name.json" "$settings_path"
+    fi
+  done < "$backup_dir/vscode-settings.manifest"
 fi
 
 previous_background=$(<"$backup_dir/previous-background")

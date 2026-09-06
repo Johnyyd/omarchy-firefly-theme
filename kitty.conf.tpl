@@ -1,6 +1,6 @@
 foreground            {{ foreground }}
 background            {{ background }}
-background_opacity    0.30
+background_opacity    0.20
 background_blur       1
 
 selection_foreground  {{ selection_foreground }}

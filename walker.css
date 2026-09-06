@@ -22,7 +22,7 @@
 @define-color text @foreground;
 @define-color border alpha(@accent, 0.3);
 @define-color frame alpha(@foreground, 0.12);
-@define-color panel alpha(@background, 0.3);
+@define-color panel alpha(@background, 0.2);
 @define-color panel-edge alpha(@color2, 0.08);
 @define-color hover alpha(@foreground, 0.06);
 @define-color selected-bg alpha(@accent, 0.12);
@@ -65,7 +65,7 @@ window .box-wrapper,
 window .search-container,
 window .search,
 .search {
-    background-color: alpha(@background, 0.22);
+    background-color: alpha(@background, 0.15);
     border: 1px solid @frame;
     border-radius: 16px;
     padding: 14px 16px;
