@@ -1,0 +1,57 @@
+# alacritty.toml
+# By Johnyyd (https://github.com/Johnyyd)
+#
+
+
+[window]
+opacity = 0.30
+
+
+[colors]
+[colors.primary]
+background = "#000000"
+foreground = "#BAC8B1"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#BAC8B1"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#BAC8B1"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#8FA4AB"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#8FA4AB"
+
+[colors.footer_bar]
+foreground = "#000000"
+background = "#BAC8B1"
+
+[colors.selection]
+text = "#000000"
+background = "#8FA4AB"
+
+[colors.normal]
+black   = "#000000"
+red     = "#D94F4F"
+green   = "#6F9C97"
+yellow  = "#FFB347"
+blue    = "#4D5F64"
+magenta = "#FF7A3D"
+cyan    = "#6F9C97"
+white   = "#BAC8B1"
+
+[colors.bright]
+black   = "#000000"
+red     = "#D94F4F"
+green   = "#6F9C97"
+yellow  = "#FFB347"
+blue    = "#4D5F64"
+magenta = "#FF7A3D"
+cyan    = "#6F9C97"
+white   = "#BAC8B1"

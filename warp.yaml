@@ -1,0 +1,26 @@
+name: Firefly
+accent: "#8FA4AB"
+cursor: "#8FA4AB"
+background: "#000000"
+foreground: "#BAC8B1"
+details: darker
+
+terminal_colors:
+  normal:
+    black:   "#000000"
+    red:     "#D94F4F"
+    green:   "#6F9C97"
+    yellow:  "#FFB347"
+    blue:    "#4D5F64"
+    magenta: "#FF7A3D"
+    cyan:    "#6F9C97"
+    white:   "#BAC8B1"
+  bright:
+    black:   "#000000"
+    red:     "#D94F4F"
+    green:   "#6F9C97"
+    yellow:  "#FFB347"
+    blue:    "#4D5F64"
+    magenta: "#FF7A3D"
+    cyan:    "#6F9C97"
+    white:   "#BAC8B1"

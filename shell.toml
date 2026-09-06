@@ -1,0 +1,166 @@
+# Firefly Theme — inspired by the character from Honkai Star Rail
+#  cream/off-white leads focus and selection; dark tones provide depth and contrast.
+
+[bar]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#BAC8B1"
+placeholder      = "#8FA4AB"
+scale-with-font  = true
+border           = "#8FA4AB"
+border-active    = "hyprland.active-border"
+
+border-alpha     = 0.88
+active-border-foreground = "rgb(FF7A3D) rgb(4D5F64) 35deg"
+
+[controls]
+# Quiet controls carry the leaf tone without outlining every element.
+normal-color        = "#739099"
+normal-fill-alpha   = 0.05
+normal-border       = "#8FA4AB"
+normal-border-width = 0
+normal-border-alpha = 0.0
+
+hover-cursor-color        = "#BAC8B1"
+hover-cursor-fill-alpha   = 0.10
+hover-cursor-border       = "#4D5F64"
+hover-cursor-border-width = 0
+hover-cursor-border-alpha = 0.0
+
+# Focus catches both cream/off-white and the green structural edge.
+focus-color        = "#FF7A3D"
+focus-fill-alpha   = 0.13
+focus-border       = "hyprland.active-border-foreground"
+focus-border-width = 1
+focus-border-alpha = 0.72
+
+# Persistent selection uses a soft cream/off-white fill with one disciplined underline.
+selected-color        = "#FFB347"
+selected-fill-alpha   = 0.18
+selected-border       = "#FF7A3D"
+selected-border-width = "0 0 1 0"
+selected-border-alpha = 0.82
+
+pressed-fill-alpha   = 0.24
+selection-fill-alpha = 0.34
+
+[spacing]
+# Slightly plush, but still compact enough for a daily-driver shell.
+scale = 1.08
+scale-with-font = true
+control-gap       = 9
+control-padding-x = 12
+control-padding-y = 7
+input-padding-y   = 8
+control-height    = 31
+popup-row-height  = 32
+row-gap           = 9
+row-padding-x     = 14
+label-gap         = 5
+panel-gap         = 16
+panel-padding     = 20
+popup-padding     = 17
+
+[font]
+base-size     = 12
+caption       = 10
+body-small    = 11
+body          = 12
+subtitle      = 13
+title         = 15
+heading       = 18
+display       = 26
+display-large = 31
+icon-small    = 11
+icon          = 14
+icon-large    = 19
+
+[popups]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#F5F8F4"
+border           = "#FF7A3D"
+border-alpha     = 0.90
+border-width     = 2
+
+[tooltip]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#BAC8B1"
+border           = "#6F9C97"
+border-alpha     = 0.68
+
+[notifications]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#BAC8B1"
+border           = "hyprland.active-border"
+border-alpha     = 0.78
+border-width     = 2
+countdown        = "#6F9C97"
+
+[launcher]
+background                = "#000000"
+background-alpha          = 0.30
+text                      = "#F5F8F4"
+border                    = "#FF7A3D"
+border-alpha              = 0.90
+border-width              = 2
+scrim                     = "#000000"
+scrim-alpha               = 0.38
+selected-background       = "#FF7A3D"
+selected-background-alpha = 0.92
+selected-text             = "#000000"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.78
+selected-border-width     = 1
+
+[menu]
+background                = "#000000"
+background-alpha          = 0.30
+text                      = "#F5F8F4"
+border                    = "#FF7A3D"
+border-alpha              = 0.90
+border-width              = 2
+scrim                     = "#000000"
+scrim-alpha               = 0.38
+selected-background       = "#FF7A3D"
+selected-background-alpha = 0.92
+selected-text             = "#000000"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.74
+selected-border-width     = 1
+
+[polkit]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#BAC8B1"
+text-error       = "#BAC8B1"
+border           = "hyprland.active-border"
+border-error     = "#BAC8B1"
+border-alpha     = 0.88
+scrim            = "#000000"
+scrim-alpha      = 0.66
+accent           = "#8FA4AB"
+
+[lock]
+background       = "#000000"
+background-alpha = 0.30
+text             = "#BAC8B1"
+placeholder      = "#8FA4AB"
+text-error       = "#BAC8B1"
+border           = "#8FA4AB"
+border-active    = "hyprland.active-border"
+border-error     = "#BAC8B1"
+border-alpha     = 0.88
+selection        = "#8FA4AB"
+selection-alpha  = 0.40
+
+[image-picker]
+scrim                   = "#000000"
+scrim-alpha             = 0.66
+text                    = "#BAC8B1"
+selected-border         = "hyprland.active-border"
+selected-border-alpha   = 1.0
+unselected-border       = "#8FA4AB"
+unselected-border-alpha = 0.42

@@ -1,0 +1,76 @@
+- CSV
+
+BAC8B1,739099,35313C,4D5F64,747E93,7796A9,DEF1ED,F5F8F4,8FA4AB,A08F82,FF7A3D,E85D2A,FFB347,D94F4F
+
+- With #
+
+#BAC8B1, #739099, #000000, #4D5F64, #747E93, #7796A9, #DEF1ED, #F5F8F4, #8FA4AB, #A08F82, #FF7A3D, #E85D2A, #FFB347, #D94F4F
+
+- Array
+
+["BAC8B1","739099","35313C","4D5F64","747E93","7796A9","DEF1ED","F5F8F4","8FA4AB","A08F82","FF7A3D","E85D2A","FFB347","D94F4F"]
+
+- Object
+
+{"Ash Grey":"BAC8B1","Air Force Blue":"739099","Shadow Grey":"35313C","Blue Slate":"4D5F64","Slate Grey":"747E93","Steel Blue":"7796A9","Azure Mist":"DEF1ED","Porcelain":"F5F8F4","Cool Steel":"8FA4AB","Dusty Taupe":"A08F82","Fire Orange":"FF7A3D","Ember Orange":"E85D2A","Flame Gold":"FFB347","Molten Red":"D94F4F"}
+
+- Extended Array
+
+[{"name":"Ash Grey","hex":"BAC8B1","rgb":[186,200,177],"cmyk":[7,0,12,22],"hsb":[97,12,78],"hsl":[97,17,74],"lab":[79,-9,10]},{"name":"Air Force Blue","hex":"739099","rgb":[115,144,153],"cmyk":[25,6,0,40],"hsb":[194,25,60],"hsl":[194,16,53],"lab":[58,-8,-8]},{"name":"Shadow Grey","hex":"35313C","rgb":[53,49,60],"cmyk":[12,18,0,76],"hsb":[262,18,24],"hsl":[262,10,21],"lab":[21,4,-6]},{"name":"Blue Slate","hex":"4D5F64","rgb":[77,95,100],"cmyk":[23,5,0,61],"hsb":[193,23,39],"hsl":[193,13,35],"lab":[39,-6,-5]},{"name":"Slate Grey","hex":"747E93","rgb":[116,126,147],"cmyk":[21,14,0,42],"hsb":[221,21,58],"hsl":[221,13,52],"lab":[53,1,-13]},{"name":"Steel Blue","hex":"7796A9","rgb":[119,150,169],"cmyk":[30,11,0,34],"hsb":[203,30,66],"hsl":[203,23,56],"lab":[60,-6,-13]},{"name":"Azure Mist","hex":"DEF1ED","rgb":[222,241,237],"cmyk":[8,0,2,5],"hsb":[167,8,95],"hsl":[167,40,91],"lab":[94,-7,0]},{"name":"Porcelain","hex":"F5F8F4","rgb":[245,248,244],"cmyk":[1,0,2,3],"hsb":[105,2,97],"hsl":[105,22,96],"lab":[97,-2,2]},{"name":"Cool Steel","hex":"8FA4AB","rgb":[143,164,171],"cmyk":[16,4,0,33],"hsb":[195,16,67],"hsl":[195,14,62],"lab":[66,-6,-6]},{"name":"Dusty Taupe","hex":"A08F82","rgb":[160,143,130],"cmyk":[0,11,19,37],"hsb":[26,19,63],"hsl":[26,14,57],"lab":[61,4,9]},{"name":"Fire Orange","hex":"FF7A3D","rgb":[255,122,61],"cmyk":[0,52,76,0],"hsb":[19,76,100],"hsl":[19,100,62],"lab":[67,57,63]},{"name":"Ember Orange","hex":"E85D2A","rgb":[232,93,42],"cmyk":[0,60,82,9],"hsb":[16,82,91],"hsl":[16,81,54],"lab":[54,57,60]},{"name":"Flame Gold","hex":"FFB347","rgb":[255,179,71],"cmyk":[0,30,72,0],"hsb":[35,72,100],"hsl":[35,100,64],"lab":[78,28,70]},{"name":"Molten Red","hex":"D94F4F","rgb":[217,79,79],"cmyk":[0,64,64,15],"hsb":[0,64,85],"hsl":[0,64,58],"lab":[49,58,35]}]
+
+- XML
+
+<palette>
+  <color name="Ash Grey" hex="BAC8B1" r="186" g="200" b="177" />
+  <color name="Air Force Blue" hex="739099" r="115" g="144" b="153" />
+  <color name="Shadow Grey" hex="35313C" r="53" g="49" b="60" />
+  <color name="Blue Slate" hex="4D5F64" r="77" g="95" b="100" />
+  <color name="Slate Grey" hex="747E93" r="116" g="126" b="147" />
+  <color name="Steel Blue" hex="7796A9" r="119" g="150" b="169" />
+  <color name="Azure Mist" hex="DEF1ED" r="222" g="241" b="237" />
+  <color name="Porcelain" hex="F5F8F4" r="245" g="248" b="244" />
+  <color name="Cool Steel" hex="8FA4AB" r="143" g="164" b="171" />
+  <color name="Dusty Taupe" hex="A08F82" r="160" g="143" b="130" />
+  <color name="Fire Orange" hex="FF7A3D" r="255" g="122" b="61" />
+  <color name="Ember Orange" hex="E85D2A" r="232" g="93" b="42" />
+  <color name="Flame Gold" hex="FFB347" r="255" g="179" b="71" />
+  <color name="Molten Red" hex="D94F4F" r="217" g="79" b="79" />
+</palette>
+
+- Syntax roles
+
+{"keyword":"FF7A3D","variable":"E85D2A","property":"FF7A3D","function":"FFB347","type":"739099","constant":"DEF1ED","comment":"A08F82","error":"D94F4F"}
+{"name":"Azure Mist","hex":"DEF1ED","rgb":[222,241,237],"cmyk":[8,0,2,5],"hsb":[167,8,95],"hsl":[167,40,91],"lab":[94,-7,0]},
+{"name":"Porcelain","hex":"F5F8F4","rgb":[245,248,244],"cmyk":[1,0,2,3],"hsb":[105,2,97],"hsl":[105,22,96],"lab":[97,-2,2]},
+{"name":"Cool Steel","hex":"8FA4AB","rgb":[143,164,171],"cmyk":[16,4,0,33],"hsb":[195,16,67],"hsl":[195,14,62],"lab":[66,-6,-6]},
+{"name":"Dusty Taupe","hex":"A08F82","rgb":[160,143,130],"cmyk":[0,11,19,37],"hsb":[26,19,63],"hsl":[26,14,57],"lab":[61,4,9]},
+{"name":"Fire Orange","hex":"FF7A3D","rgb":[255,122,61],"cmyk":[0,52,76,0],"hsb":[19,76,100],"hsl":[19,100,62],"lab":[67,57,63]},
+{"name":"Ember Orange","hex":"E85D2A","rgb":[232,93,42],"cmyk":[0,60,82,9],"hsb":[16,82,91],"hsl":[16,81,54],"lab":[54,57,60]},
+{"name":"Flame Gold","hex":"FFB347","rgb":[255,179,71],"cmyk":[0,30,72,0],"hsb":[35,72,100],"hsl":[35,100,64],"lab":[78,28,70]},
+{"name":"Molten Red","hex":"D94F4F","rgb":[217,79,79],"cmyk":[0,64,64,15],"hsb":[0,64,85],"hsl":[0,64,58],"lab":[49,58,35]}
+
+
+// Syntax roles
+{"keyword":"FF7A3D","variable":"E85D2A","property":"FF7A3D","function":"FFB347","type":"739099","constant":"DEF1ED","comment":"A08F82","error":"D94F4F"}
+- Extended Array
+
+[{"name":"Ash Grey","hex":"BAC8B1","rgb":[186,200,177],"cmyk":[7,0,12,22],"hsb":[97,12,78],"hsl":[97,17,74],"lab":[79,-9,10]},{"name":"Air Force Blue","hex":"739099","rgb":[115,144,153],"cmyk":[25,6,0,40],"hsb":[194,25,60],"hsl":[194,16,53],"lab":[58,-8,-8]},{"name":"Shadow Grey","hex":"35313C","rgb":[53,49,60],"cmyk":[12,18,0,76],"hsb":[262,18,24],"hsl":[262,10,21],"lab":[21,4,-6]},{"name":"Blue Slate","hex":"4D5F64","rgb":[77,95,100],"cmyk":[23,5,0,61],"hsb":[193,23,39],"hsl":[193,13,35],"lab":[39,-6,-5]},{"name":"Slate Grey","hex":"747E93","rgb":[116,126,147],"cmyk":[21,14,0,42],"hsb":[221,21,58],"hsl":[221,13,52],"lab":[53,1,-13]},{"name":"Steel Blue","hex":"7796A9","rgb":[119,150,169],"cmyk":[30,11,0,34],"hsb":[203,30,66],"hsl":[203,23,56],"lab":[60,-6,-13]},{"name":"Azure Mist","hex":"DEF1ED","rgb":[222,241,237],"cmyk":[8,0,2,5],"hsb":[167,8,95],"hsl":[167,40,91],"lab":[94,-7,0]},{"name":"Porcelain","hex":"F5F8F4","rgb":[245,248,244],"cmyk":[1,0,2,3],"hsb":[105,2,97],"hsl":[105,22,96],"lab":[97,22,96],"lab":[97,-2,2]},{"name":"Cool Steel","hex":"8FA4AB","rgb":[143,164,171],"cmyk":[16,4,0,33],"hsb":[195,16,67],"hsl":[195,14,62],"lab":[66,-6,-6]},{"name":"Dusty Taupe","hex":"A08F82","rgb":[160,143,130],"cmyk":[0,11,19,37],"hsb":[26,19,63],"hsl":[26,14,57],"lab":[61,4,9]},{"name":"Fire Orange","hex":"FF7A3D","rgb":[255,122,61],"cmyk":[0,52,76,0],"hsb":[19,76,100],"hsl":[19,100,62],"lab":[67,57,63]},{"name":"Ember Orange","hex":"E85D2A","rgb":[232,93,42],"cmyk":[0,60,82,9],"hsb":[16,82,91],"hsl":[16,81,54],"lab":[54,57,60]},{"name":"Flame Gold","hex":"FFB347","rgb":[255,179,71],"cmyk":[0,30,72,0],"hsb":[35,72,100],"hsl":[35,100,64],"lab":[78,28,70]},{"name":"Molten Red","hex":"D94F4F","rgb":[217,79,79],"cmyk":[0,64,64,15],"hsb":[0,64,85],"hsl":[0,64,58],"lab":[49,58,35]}]
+
+- XML
+
+<palette>
+ <color name="Ash Grey" hex="BAC8B1" r="186" g="200" b="177" />
+ <color name="Air Force Blue" hex="739099" r="115" g="144" b="153" />
+ <color name="Shadow Grey" hex="35313C" r="53" g="49" b="60" />
+ <color name="Blue Slate" hex="4D5F64" r="77" g="95" b="100" />
+ <color name="Slate Grey" hex="747E93" r="116" g="126" b="147" />
+ <color name="Steel Blue" hex="7796A9" r="119" g="150" b="169" />
+ <color name="Azure Mist" hex="DEF1ED" r="222" g="241" b="237" />
+ <color name="Porcelain" hex="F5F8F4" r="245" g="248" b="244" />
+ <color name="Cool Steel" hex="8FA4AB" r="143" g="164" b="171" />
+ <color name="Dusty Taupe" hex="A08F82" r="160" g="143" b="130" />
+ <color name="Fire Orange" hex="FF7A3D" r="255" g="122" b="61" />
+ <color name="Ember Orange" hex="E85D2A" r="232" g="93" b="42" />
+ <color name="Flame Gold" hex="FFB347" r="255" g="179" b="71" />
+ <color name="Molten Red" hex="D94F4F" r="217" g="79" b="79" />
+</palette>

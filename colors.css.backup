@@ -1,0 +1,30 @@
+/*
+   * Sakura Mochi shared CSS color variables.
+   * Primary names: color0-color15 (matches colors.toml)
+*/
+
+  /* ANSI palette */
+  @define-color color0 #2d626a;
+  @define-color color1 #2d626a;
+  @define-color color2 #428a91;
+  @define-color color3 #428a91;
+  @define-color color4 #6f9c97;
+  @define-color color5 #6f9c97;
+  @define-color color6 #aecdc7;
+  @define-color color7 #aecdc7;
+  @define-color color8 #2d626a;
+  @define-color color9 #2d626a;
+  @define-color color10 #428a91;
+  @define-color color11 #428a91;
+  @define-color color12 #6f9c97;
+  @define-color color13 #6f9c97;
+  @define-color color14 #aecdc7;
+  @define-color color15 #f0f1c7;
+
+  /* Optional semantic aliases */
+  @define-color background #2a2a26;
+  @define-color foreground #fbc6c8;
+  @define-color accent #bf3533;
+  @define-color selection_bg #bf3533;
+  @define-color selection_fg #2a2a26;
+  @define-color cursor #bf3533;

@@ -1,0 +1,69 @@
+# Accent and UI colors
+accent = "#8FA4AB"
+active_border_color = "#8FA4AB"
+active_tab_background = "#8FA4AB"
+
+# Cursor colors
+cursor = "#8FA4AB"
+
+# Primary colors
+foreground = "#BAC8B1"
+background = "#000000"
+
+# Selection colors
+selection_foreground = "#000000"
+selection_background = "#8FA4AB"
+
+# Normal colors (ANSI 0-7)
+color0 = "#000000"
+color1 = "#D94F4F"
+color2 = "#6F9C97"
+color3 = "#FFB347"
+color4 = "#4D5F64"
+color5 = "#FF7A3D"
+color6 = "#6F9C97"
+color7 = "#BAC8B1"
+
+# Bright colors (ANSI 8-15)
+color8 = "#000000"
+color9 = "#FF7A3D"
+color10 = "#6F9C97"
+color11 = "#FFB347"
+color12 = "#4D5F64"
+color13 = "#E85D2A"
+color14 = "#6F9C97"
+color15 = "#DEF1ED"
+
+
+# Omarchy 4 semantic palette roles. Keep these aligned with color0-color15.
+mode = "dark"
+bg = "#000000"
+lighter_bg = "#4D5F64"
+selection = "#8FA4AB"
+# Readable low-emphasis text; dark_fg remains the decorative structural green.
+muted = "#A08F82"
+dark_fg = "#739099"
+fg = "#BAC8B1"
+light_fg = "#BAC8B1"
+soft_fg = "#8FA4AB"
+bright_fg = "#BAC8B1"
+red = "#D94F4F"
+green = "#6F9C97"
+yellow = "#FFB347"
+blue = "#4D5F64"
+magenta = "#FF7A3D"
+cyan = "#6F9C97"
+orange = "#FF7A3D"
+brown = "#E85D2A"
+dark_bg = "#000000"
+darker_bg = "#000000"
+bright_red = "#D94F4F"
+bright_green = "#6F9C97"
+bright_yellow = "#FFB347"
+bright_blue = "#4D5F64"
+bright_magenta = "#FF7A3D"
+bright_cyan = "#6F9C97"
+
+# Quattro shares these gradients between Hyprland and shell surfaces.
+hyprland_active_border = "rgba(BAC8B1ff) rgba(BAC8B1cc) rgba(BAC8B1aa) 35deg"
+hyprland_inactive_border = "rgba(6F9C9799)"
