@@ -4,7 +4,7 @@
 @define-color accent #8FA4AB;
 @define-color fire #FF7A3D;
 @define-color panel-tint rgba(111, 156, 151, 0.05);
-@define-color panel alpha(@background, 0);
+@define-color panel alpha(@background, 0.2);
 
 window#waybar {
     background: #000000;
@@ -28,6 +28,17 @@ window#waybar {
     color: @fire;
 }
 
- 
+/* Opaque popups, menus, and tooltips */
+tooltip,
+menu {
+    background: #000000;
+    color: @foreground;
+    border: 1px solid @fire;
+    border-radius: 8px;
+    opacity: 1;
+}
 
- 
+tooltip label,
+menu label {
+    color: @foreground;
+}
